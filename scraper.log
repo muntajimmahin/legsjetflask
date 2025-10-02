@@ -1,0 +1,271 @@
+2025-07-05 02:22:20 INFO: Starting flyvictor1 scraper
+2025-07-05 04:16:05 INFO: Starting flyvictor1 scraper
+2025-07-05 04:16:05 INFO: Finished flyvictor1 scraper
+2025-07-05 04:16:15 INFO: Starting flyvictor1 scraper
+2025-07-05 04:16:15 INFO: Finished flyvictor1 scraper
+2025-07-05 04:17:34 INFO: Starting flyvictor1 scraper
+2025-07-05 04:18:29 INFO: Finished flyvictor1 scraper
+2025-07-05 04:49:06 INFO: Starting flyvictor1 scraper
+2025-07-05 06:12:32 INFO: Starting scraper
+2025-07-05 06:13:04 INFO: Starting scraper
+2025-07-05 06:18:37 INFO: Starting scraper
+2025-07-05 06:22:07 INFO: Starting scraper
+2025-07-05 06:25:34 INFO: Starting scraper
+2025-07-05 13:00:47 INFO: Added job "scheduled_task" to job store "default"
+2025-07-05 13:00:47 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-05 13:00:47 INFO: [33mPress CTRL+C to quit[0m
+2025-07-05 13:00:47 INFO:  * Restarting with stat
+2025-07-05 13:00:55 INFO: Added job "scheduled_task" to job store "default"
+2025-07-05 13:00:55 WARNING:  * Debugger is active!
+2025-07-05 13:00:55 INFO:  * Debugger PIN: 409-045-265
+2025-07-05 13:01:00 INFO: 127.0.0.1 - - [05/Jul/2025 13:01:00] "GET / HTTP/1.1" 200 -
+2025-07-05 13:01:01 INFO: 127.0.0.1 - - [05/Jul/2025 13:01:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-05 13:01:05 INFO: Running scheduled scraper
+2025-07-05 13:02:07 INFO: 127.0.0.1 - - [05/Jul/2025 13:02:07] "GET / HTTP/1.1" 200 -
+2025-07-05 13:02:09 INFO: Running scheduled scraper
+2025-07-05 13:07:32 INFO: Added job "daily_scraper" to job store "default"
+2025-07-05 13:07:32 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-05 13:07:32 INFO: [33mPress CTRL+C to quit[0m
+2025-07-05 13:07:32 INFO:  * Restarting with stat
+2025-07-05 13:07:32 INFO: Added job "daily_scraper" to job store "default"
+2025-07-05 13:07:32 WARNING:  * Debugger is active!
+2025-07-05 13:07:32 INFO:  * Debugger PIN: 409-045-265
+2025-07-05 13:07:36 INFO: Scraper started
+2025-07-05 13:07:36 INFO: Scraper finished
+2025-07-05 13:07:36 INFO: 127.0.0.1 - - [05/Jul/2025 13:07:36] "[32mGET /run-now HTTP/1.1[0m" 302 -
+2025-07-05 13:07:36 INFO: 127.0.0.1 - - [05/Jul/2025 13:07:36] "GET / HTTP/1.1" 200 -
+2025-07-05 13:07:50 INFO: Removed job daily_scraper
+2025-07-05 13:07:50 INFO: Added job "daily_scraper" to job store "default"
+2025-07-05 13:07:50 INFO: 127.0.0.1 - - [05/Jul/2025 13:07:50] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-05 13:07:50 INFO: 127.0.0.1 - - [05/Jul/2025 13:07:50] "GET / HTTP/1.1" 200 -
+2025-07-05 13:07:57 INFO: Scraper started
+2025-07-05 13:07:57 INFO: Scraper finished
+2025-07-05 13:07:57 INFO: 127.0.0.1 - - [05/Jul/2025 13:07:57] "[32mGET /run-now HTTP/1.1[0m" 302 -
+2025-07-05 13:07:57 INFO: 127.0.0.1 - - [05/Jul/2025 13:07:57] "GET / HTTP/1.1" 200 -
+2025-07-05 13:08:05 INFO: Removed job daily_scraper
+2025-07-05 13:08:05 INFO: 127.0.0.1 - - [05/Jul/2025 13:08:05] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-05 13:08:05 INFO: 127.0.0.1 - - [05/Jul/2025 13:08:05] "GET / HTTP/1.1" 200 -
+2025-07-05 13:08:07 INFO: Added job "daily_scraper" to job store "default"
+2025-07-05 13:08:07 INFO: 127.0.0.1 - - [05/Jul/2025 13:08:07] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-05 13:08:07 INFO: 127.0.0.1 - - [05/Jul/2025 13:08:07] "GET / HTTP/1.1" 200 -
+2025-07-05 13:08:37 INFO: Removed job daily_scraper
+2025-07-05 13:08:37 INFO: Added job "daily_scraper" to job store "default"
+2025-07-05 13:08:37 INFO: 127.0.0.1 - - [05/Jul/2025 13:08:37] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-05 13:08:37 INFO: 127.0.0.1 - - [05/Jul/2025 13:08:37] "GET / HTTP/1.1" 200 -
+2025-07-05 13:10:00 INFO: Running job "daily_scraper (trigger: cron[hour='13', minute='10'], next run at: 2025-07-05 13:10:00 +06)" (scheduled at 2025-07-05 13:10:00+06:00)
+2025-07-05 13:10:00 INFO: Scraper started
+2025-07-05 13:10:00 INFO: Scraper finished
+2025-07-05 13:10:00 INFO: Job "daily_scraper (trigger: cron[hour='13', minute='10'], next run at: 2025-07-06 13:10:00 +06)" executed successfully
+2025-07-05 13:10:05 INFO: Added job "daily_scraper" to job store "default"
+2025-07-05 13:10:05 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-05 13:10:05 INFO: [33mPress CTRL+C to quit[0m
+2025-07-05 13:10:05 INFO:  * Restarting with stat
+2025-07-05 13:10:06 INFO: Added job "daily_scraper" to job store "default"
+2025-07-05 13:10:06 WARNING:  * Debugger is active!
+2025-07-05 13:10:06 INFO:  * Debugger PIN: 409-045-265
+2025-07-05 13:10:07 INFO: 127.0.0.1 - - [05/Jul/2025 13:10:07] "GET / HTTP/1.1" 200 -
+2025-07-05 13:10:14 INFO: Removed job daily_scraper
+2025-07-05 13:10:14 INFO: Added job "daily_scraper" to job store "default"
+2025-07-05 13:10:14 INFO: 127.0.0.1 - - [05/Jul/2025 13:10:14] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-05 13:10:14 INFO: 127.0.0.1 - - [05/Jul/2025 13:10:14] "GET / HTTP/1.1" 200 -
+2025-07-05 13:11:00 INFO: Running job "daily_scraper (trigger: cron[hour='13', minute='11'], next run at: 2025-07-05 13:11:00 +06)" (scheduled at 2025-07-05 13:11:00+06:00)
+2025-07-05 13:11:00 INFO: Scraper started
+2025-07-05 13:16:46 INFO: Starting scraper
+2025-07-05 13:18:05 INFO: Starting scraper
+2025-07-05 13:19:15 INFO: Added job "daily_scraper" to job store "default"
+2025-07-05 13:19:15 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-05 13:19:15 INFO: [33mPress CTRL+C to quit[0m
+2025-07-05 13:19:15 INFO:  * Restarting with stat
+2025-07-05 13:19:16 INFO: Added job "daily_scraper" to job store "default"
+2025-07-05 13:19:16 WARNING:  * Debugger is active!
+2025-07-05 13:19:16 INFO:  * Debugger PIN: 409-045-265
+2025-07-05 13:19:17 INFO: 127.0.0.1 - - [05/Jul/2025 13:19:17] "GET / HTTP/1.1" 200 -
+2025-07-05 13:19:24 INFO: Removed job daily_scraper
+2025-07-05 13:19:24 INFO: Added job "daily_scraper" to job store "default"
+2025-07-05 13:19:24 INFO: 127.0.0.1 - - [05/Jul/2025 13:19:24] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-05 13:19:24 INFO: 127.0.0.1 - - [05/Jul/2025 13:19:24] "GET / HTTP/1.1" 200 -
+2025-07-05 13:20:00 INFO: Running job "daily_scraper (trigger: cron[hour='13', minute='20'], next run at: 2025-07-05 13:20:00 +06)" (scheduled at 2025-07-05 13:20:00+06:00)
+2025-07-05 13:20:00 INFO: Scraper started
+2025-07-05 19:40:09 INFO: Starting scraper
+2025-07-05 19:41:06 INFO: Starting scraper
+2025-07-05 19:41:57 INFO: Starting scraper
+2025-07-05 19:43:02 INFO: Starting scraper
+2025-07-05 19:44:13 INFO: Starting scraper
+2025-07-05 19:44:58 INFO: Starting scraper
+2025-07-05 19:45:18 INFO: Starting scraper
+2025-07-05 19:46:15 INFO: Starting scraper
+2025-07-05 19:46:49 INFO: Starting scraper
+2025-07-05 19:47:44 INFO: Starting scraper
+2025-07-05 19:58:39 INFO: Starting scraper
+2025-07-05 20:01:57 INFO: Starting scraper
+2025-07-05 20:02:31 INFO: Starting scraper
+2025-07-07 03:13:57 INFO: Starting scraper
+2025-07-07 03:15:05 INFO: Finished scraper
+2025-07-07 03:26:49 INFO: Added job "daily_scraper" to job store "default"
+2025-07-07 03:26:49 INFO: Scraper scheduled at 07:00
+2025-07-07 03:26:49 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-07 03:26:49 INFO: [33mPress CTRL+C to quit[0m
+2025-07-07 03:26:49 INFO:  * Restarting with stat
+2025-07-07 03:26:50 INFO: Added job "daily_scraper" to job store "default"
+2025-07-07 03:26:50 INFO: Scraper scheduled at 07:00
+2025-07-07 03:26:50 WARNING:  * Debugger is active!
+2025-07-07 03:26:50 INFO:  * Debugger PIN: 409-045-265
+2025-07-07 03:27:15 INFO: 127.0.0.1 - - [07/Jul/2025 03:27:15] "GET / HTTP/1.1" 200 -
+2025-07-07 03:27:15 INFO: 127.0.0.1 - - [07/Jul/2025 03:27:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-07 03:27:46 INFO: Removed job daily_scraper
+2025-07-07 03:27:46 INFO: Added job "daily_scraper" to job store "default"
+2025-07-07 03:27:46 INFO: Scraper scheduled at 03:28
+2025-07-07 03:27:46 INFO: 127.0.0.1 - - [07/Jul/2025 03:27:46] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-07 03:27:46 INFO: 127.0.0.1 - - [07/Jul/2025 03:27:46] "GET / HTTP/1.1" 200 -
+2025-07-07 03:28:00 INFO: Running job "daily_scraper (trigger: cron[hour='3', minute='28'], next run at: 2025-07-07 03:28:00 +06)" (scheduled at 2025-07-07 03:28:00+06:00)
+2025-07-07 03:28:00 INFO: Scraper started
+2025-07-07 03:28:54 INFO: 127.0.0.1 - - [07/Jul/2025 03:28:54] "GET / HTTP/1.1" 200 -
+2025-07-07 03:28:55 INFO: 127.0.0.1 - - [07/Jul/2025 03:28:55] "GET / HTTP/1.1" 200 -
+2025-07-07 03:28:56 INFO: 127.0.0.1 - - [07/Jul/2025 03:28:56] "GET / HTTP/1.1" 200 -
+2025-07-07 03:29:02 INFO: 127.0.0.1 - - [07/Jul/2025 03:29:02] "GET / HTTP/1.1" 200 -
+2025-07-07 03:30:40 INFO: Removed job daily_scraper
+2025-07-07 03:30:40 INFO: 127.0.0.1 - - [07/Jul/2025 03:30:40] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-07 03:30:40 INFO: 127.0.0.1 - - [07/Jul/2025 03:30:40] "GET / HTTP/1.1" 200 -
+2025-07-07 03:31:00 INFO: 127.0.0.1 - - [07/Jul/2025 03:31:00] "GET / HTTP/1.1" 200 -
+2025-07-07 03:31:12 INFO: Scraper started
+2025-07-07 03:31:58 INFO: Scraper finished
+2025-07-07 03:31:58 INFO: Job "daily_scraper (trigger: cron[hour='3', minute='28'], next run at: 2025-07-08 03:28:00 +06)" executed successfully
+2025-07-07 03:36:59 INFO: Added job "daily_scraper" to job store "default"
+2025-07-07 03:36:59 INFO: Scraper scheduled at 03:28
+2025-07-07 03:36:59 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-07 03:36:59 INFO: [33mPress CTRL+C to quit[0m
+2025-07-07 03:36:59 INFO:  * Restarting with stat
+2025-07-07 03:37:00 INFO: Added job "daily_scraper" to job store "default"
+2025-07-07 03:37:00 INFO: Scraper scheduled at 03:28
+2025-07-07 03:37:00 WARNING:  * Debugger is active!
+2025-07-07 03:37:00 INFO:  * Debugger PIN: 409-045-265
+2025-07-07 03:37:02 INFO: 127.0.0.1 - - [07/Jul/2025 03:37:02] "GET / HTTP/1.1" 200 -
+2025-07-07 03:45:37 INFO: Added job "daily_scraper" to job store "default"
+2025-07-07 03:45:37 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-07 03:45:37 INFO: [33mPress CTRL+C to quit[0m
+2025-07-07 03:45:37 INFO:  * Restarting with stat
+2025-07-07 03:45:39 INFO: Added job "daily_scraper" to job store "default"
+2025-07-07 03:45:39 WARNING:  * Debugger is active!
+2025-07-07 03:45:39 INFO:  * Debugger PIN: 409-045-265
+2025-07-07 03:45:41 INFO: 127.0.0.1 - - [07/Jul/2025 03:45:41] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-07 03:45:42 INFO: 127.0.0.1 - - [07/Jul/2025 03:45:42] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-07-07 03:45:42 INFO: 127.0.0.1 - - [07/Jul/2025 03:45:42] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-07-07 03:45:42 INFO: 127.0.0.1 - - [07/Jul/2025 03:45:42] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=3l5FatVzwSB4zjU6VyHL HTTP/1.1" 200 -
+2025-07-07 03:45:42 INFO: 127.0.0.1 - - [07/Jul/2025 03:45:42] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-07-07 03:46:26 INFO: 127.0.0.1 - - [07/Jul/2025 03:46:26] "GET / HTTP/1.1" 200 -
+2025-07-07 03:46:37 INFO: Removed job daily_scraper
+2025-07-07 03:46:37 INFO: Added job "daily_scraper" to job store "default"
+2025-07-07 03:46:37 INFO: 127.0.0.1 - - [07/Jul/2025 03:46:37] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-07 03:46:37 INFO: 127.0.0.1 - - [07/Jul/2025 03:46:37] "GET / HTTP/1.1" 200 -
+2025-07-07 03:46:57 INFO: 127.0.0.1 - - [07/Jul/2025 03:46:57] "GET / HTTP/1.1" 200 -
+2025-07-07 03:47:00 INFO: Running job "daily_scraper (trigger: cron[hour='3', minute='47'], next run at: 2025-07-07 03:47:00 +06)" (scheduled at 2025-07-07 03:47:00+06:00)
+2025-07-07 03:47:00 INFO: \U0001f7e2 Scraper started
+2025-07-07 03:47:00 INFO: Job "daily_scraper (trigger: cron[hour='3', minute='47'], next run at: 2025-07-08 03:47:00 +06)" executed successfully
+2025-07-07 03:47:04 INFO: Added job "daily_scraper" to job store "default"
+2025-07-07 03:47:04 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-07 03:47:04 INFO: [33mPress CTRL+C to quit[0m
+2025-07-07 03:47:04 INFO:  * Restarting with stat
+2025-07-07 03:47:05 INFO: Added job "daily_scraper" to job store "default"
+2025-07-07 03:47:05 WARNING:  * Debugger is active!
+2025-07-07 03:47:05 INFO:  * Debugger PIN: 409-045-265
+2025-07-07 03:47:06 INFO: 127.0.0.1 - - [07/Jul/2025 03:47:06] "GET / HTTP/1.1" 200 -
+2025-07-07 03:47:15 INFO: Removed job daily_scraper
+2025-07-07 03:47:15 INFO: Added job "daily_scraper" to job store "default"
+2025-07-07 03:47:15 INFO: 127.0.0.1 - - [07/Jul/2025 03:47:15] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-07 03:47:15 INFO: 127.0.0.1 - - [07/Jul/2025 03:47:15] "GET / HTTP/1.1" 200 -
+2025-07-07 03:48:00 INFO: Running job "daily_scraper (trigger: cron[hour='3', minute='48'], next run at: 2025-07-07 03:48:00 +06)" (scheduled at 2025-07-07 03:48:00+06:00)
+2025-07-07 03:48:00 INFO: \U0001f7e2 Scraper started
+2025-07-07 03:48:00 INFO: Job "daily_scraper (trigger: cron[hour='3', minute='48'], next run at: 2025-07-08 03:48:00 +06)" executed successfully
+2025-07-07 03:48:17 WARNING: Kill signal sent to scraper
+2025-07-07 03:48:17 INFO: 127.0.0.1 - - [07/Jul/2025 03:48:17] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-07 03:48:17 INFO: 127.0.0.1 - - [07/Jul/2025 03:48:17] "GET / HTTP/1.1" 200 -
+2025-07-07 03:48:18 WARNING: \u26d4 Scraper killed by user
+2025-07-07 03:56:37 INFO:  * Detected change in 'E:\\client.docstec.com\\flyvictor.py', reloading
+2025-07-07 03:56:37 INFO:  * Restarting with stat
+2025-07-07 03:56:39 INFO: Added job "daily_scraper" to job store "default"
+2025-07-07 03:56:39 WARNING:  * Debugger is active!
+2025-07-07 03:56:39 INFO:  * Debugger PIN: 409-045-265
+2025-07-07 03:57:37 INFO:  * Detected change in 'E:\\client.docstec.com\\app.py', reloading
+2025-07-07 03:57:37 INFO:  * Restarting with stat
+2025-07-07 03:57:42 INFO: Added job "daily_scraper" to job store "default"
+2025-07-07 03:57:42 WARNING:  * Debugger is active!
+2025-07-07 03:57:42 INFO:  * Debugger PIN: 409-045-265
+2025-07-07 03:57:43 INFO: Scraper started
+2025-07-07 03:57:43 INFO: 127.0.0.1 - - [07/Jul/2025 03:57:43] "[32mGET /run-now HTTP/1.1[0m" 302 -
+2025-07-07 03:57:43 INFO: 127.0.0.1 - - [07/Jul/2025 03:57:43] "GET / HTTP/1.1" 200 -
+2025-07-07 03:58:15 INFO: Added job "daily_scraper" to job store "default"
+2025-07-07 03:58:15 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-07 03:58:15 INFO: [33mPress CTRL+C to quit[0m
+2025-07-07 03:58:15 INFO:  * Restarting with stat
+2025-07-07 03:58:21 INFO: Added job "daily_scraper" to job store "default"
+2025-07-07 03:58:21 WARNING:  * Debugger is active!
+2025-07-07 03:58:21 INFO:  * Debugger PIN: 409-045-265
+2025-07-07 03:58:21 INFO: 127.0.0.1 - - [07/Jul/2025 03:58:21] "GET / HTTP/1.1" 200 -
+2025-07-07 03:58:29 INFO: Removed job daily_scraper
+2025-07-07 03:58:29 INFO: Added job "daily_scraper" to job store "default"
+2025-07-07 03:58:29 INFO: 127.0.0.1 - - [07/Jul/2025 03:58:29] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-07 03:58:29 INFO: 127.0.0.1 - - [07/Jul/2025 03:58:29] "GET / HTTP/1.1" 200 -
+2025-07-07 03:59:00 INFO: Running job "daily_scraper (trigger: cron[hour='3', minute='59'], next run at: 2025-07-07 03:59:00 +06)" (scheduled at 2025-07-07 03:59:00+06:00)
+2025-07-07 03:59:00 INFO: Scraper started
+2025-07-07 03:59:00 INFO: Job "daily_scraper (trigger: cron[hour='3', minute='59'], next run at: 2025-07-08 03:59:00 +06)" executed successfully
+2025-07-07 04:01:24 INFO:  * Detected change in 'E:\\client.docstec.com\\all.py', reloading
+2025-07-07 04:01:24 INFO:  * Restarting with stat
+2025-07-07 04:01:29 INFO: Added job "daily_scraper" to job store "default"
+2025-07-07 04:01:29 WARNING:  * Debugger is active!
+2025-07-07 04:01:29 INFO:  * Debugger PIN: 409-045-265
+2025-07-07 04:01:32 INFO: Starting scraper
+2025-07-07 04:02:29 INFO: Starting scraper
+2025-07-07 04:07:39 INFO: Starting scraper
+2025-07-07 04:09:42 INFO: Starting scraper
+2025-07-07 04:15:17 INFO: Starting scraper
+2025-07-07 04:18:29 INFO: Starting scraper
+2025-07-07 04:18:55 INFO: Added job "daily_scraper" to job store "default"
+2025-07-07 04:18:55 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-07 04:18:55 INFO: [33mPress CTRL+C to quit[0m
+2025-07-07 04:18:55 INFO:  * Restarting with stat
+2025-07-07 04:18:59 INFO: Added job "daily_scraper" to job store "default"
+2025-07-07 04:18:59 WARNING:  * Debugger is active!
+2025-07-07 04:18:59 INFO:  * Debugger PIN: 409-045-265
+2025-07-07 04:18:59 INFO: 127.0.0.1 - - [07/Jul/2025 04:18:59] "GET / HTTP/1.1" 200 -
+2025-07-07 04:19:05 INFO: Removed job daily_scraper
+2025-07-07 04:19:05 INFO: Added job "daily_scraper" to job store "default"
+2025-07-07 04:19:05 INFO: 127.0.0.1 - - [07/Jul/2025 04:19:05] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-07 04:19:05 INFO: 127.0.0.1 - - [07/Jul/2025 04:19:05] "GET / HTTP/1.1" 200 -
+2025-07-07 04:20:00 INFO: Running job "daily_scraper (trigger: cron[hour='4', minute='20'], next run at: 2025-07-07 04:20:00 +06)" (scheduled at 2025-07-07 04:20:00+06:00)
+2025-07-07 04:20:00 INFO: Scraper started
+2025-07-07 04:20:00 INFO: Job "daily_scraper (trigger: cron[hour='4', minute='20'], next run at: 2025-07-08 04:20:00 +06)" executed successfully
+2025-07-07 04:20:16 WARNING: Kill signal sent to scraper
+2025-07-07 04:20:16 INFO: 127.0.0.1 - - [07/Jul/2025 04:20:16] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-07 04:20:16 INFO: 127.0.0.1 - - [07/Jul/2025 04:20:16] "GET / HTTP/1.1" 200 -
+2025-07-07 04:20:20 WARNING: Scraper killed by user
+2025-07-07 04:20:35 INFO: Scraper started
+2025-07-07 04:20:35 INFO: 127.0.0.1 - - [07/Jul/2025 04:20:35] "[32mGET /run-now HTTP/1.1[0m" 302 -
+2025-07-07 04:20:35 INFO: 127.0.0.1 - - [07/Jul/2025 04:20:35] "GET / HTTP/1.1" 200 -
+2025-07-07 04:20:41 WARNING: Kill signal sent to scraper
+2025-07-07 04:20:41 INFO: 127.0.0.1 - - [07/Jul/2025 04:20:41] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-07 04:20:41 INFO: 127.0.0.1 - - [07/Jul/2025 04:20:41] "GET / HTTP/1.1" 200 -
+2025-07-07 04:20:42 WARNING: Scraper killed by user
+2025-07-07 04:20:43 WARNING: Kill signal sent to scraper
+2025-07-07 04:20:43 INFO: 127.0.0.1 - - [07/Jul/2025 04:20:43] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-07 04:20:43 INFO: 127.0.0.1 - - [07/Jul/2025 04:20:43] "GET / HTTP/1.1" 200 -
+2025-07-07 04:20:44 WARNING: Kill signal sent to scraper
+2025-07-07 04:20:44 INFO: 127.0.0.1 - - [07/Jul/2025 04:20:44] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-07 04:20:44 INFO: 127.0.0.1 - - [07/Jul/2025 04:20:44] "GET / HTTP/1.1" 200 -
+2025-07-07 04:20:45 WARNING: Kill signal sent to scraper
+2025-07-07 04:20:45 INFO: 127.0.0.1 - - [07/Jul/2025 04:20:45] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-07 04:20:45 INFO: 127.0.0.1 - - [07/Jul/2025 04:20:45] "GET / HTTP/1.1" 200 -
+2025-07-07 04:20:47 WARNING: Kill signal sent to scraper
+2025-07-07 04:20:47 INFO: 127.0.0.1 - - [07/Jul/2025 04:20:47] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-07 04:20:47 INFO: 127.0.0.1 - - [07/Jul/2025 04:20:47] "GET / HTTP/1.1" 200 -
+2025-07-07 04:32:14 INFO:  * Detected change in 'E:\\client.docstec.com\\app.py', reloading
+2025-07-07 04:32:15 INFO:  * Restarting with stat

@@ -1,0 +1,178 @@
+{% extends "base.html" %}
+{% block title %}Inbox Dashboard{% endblock %}
+
+{% block content %}
+<h2 class="mb-4 text-center">📥 Inbox Scraper Stats</h2>
+<div class="row mb-4">
+    <div class="col-md-6">
+                <h2> Mailbox Scraper Time Schedule</h2>
+
+        <ul class="list-group">
+            <li class="list-group-item"><strong>🕒 Last Run:</strong> {{ stats.last_run }}</li>
+            <li class="list-group-item"><strong>📈 Today Count:</strong> {{ stats.today_count }}</li>
+            <li class="list-group-item"><strong>📅 Current Time:</strong> {{ now.strftime('%Y-%m-%d %H:%M:%S') }}</li>
+            <li class="list-group-item"><strong>⏰ Daily Scheduled Time:</strong> {{ scraper_time }}</li>
+            <li class="list-group-item"><strong>🔁 Scheduler Enabled:</strong> {{ 'Yes' if enabled else 'No' }}</li>
+            <li class="list-group-item"><strong>⚙️ Scraper Status:</strong> {{ scraper_status }}</li>
+        </ul>
+    </div>
+
+
+     <div class="col-md-6">
+                  <h2>Real Time Output Flight Data</h2>
+
+<style>
+/* Container */
+.live-log-container {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+/* Table */
+.live-log-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: block;
+    height: 400px;
+    overflow-y: auto;
+}
+
+/* Header */
+.live-log-table thead th {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    background: #4CAF50;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+/* Table cells */
+.live-log-table tbody td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Links */
+.live-log-link {
+    color: #2196F3;
+    text-decoration: none;
+}
+.live-log-link:hover {
+    text-decoration: underline;
+}
+ th.rrr {
+    width: 10%;
+}
+
+</style>
+
+
+<div class="live-log-container">
+    <table class="live-log-table" id="live-log-table">
+        <thead>
+            <tr>
+                <th class="rrr">Timestamp</th>
+                <th>Message / URL</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<script>
+const logTableBody = document.getElementById("live-log-table").querySelector("tbody");
+let lastLength = 0;
+
+async function fetchLogs(){
+    try {
+        const res = await fetch("/get-logs");
+        const logs = await res.json();
+
+        //  log  table row  add
+        for(let i=lastLength; i<logs.length; i++){
+            const tr = document.createElement("tr");
+
+            const tdTimestamp = document.createElement("td");
+            tdTimestamp.textContent = logs[i][0];
+
+
+
+            const tdMessage = document.createElement("td");
+            if(logs[i][2].startsWith("http")){
+                const a = document.createElement("a");
+                a.href = logs[i][2];
+                a.target = "_blank";
+                a.textContent = logs[i][2];
+                a.className = "live-log-link";
+                tdMessage.appendChild(a);
+            } else {
+                tdMessage.textContent = logs[i][2];
+            }
+
+            tr.appendChild(tdTimestamp);
+            tr.appendChild(tdMessage);
+
+            logTableBody.appendChild(tr);
+        }
+        lastLength = logs.length;
+
+        // Auto-scroll
+        logTableBody.parentElement.scrollTop = logTableBody.parentElement.scrollHeight;
+
+        // DOM overload row remove
+        while(logTableBody.childNodes.length > 5000){
+            logTableBody.removeChild(logTableBody.firstChild);
+        }
+
+    } catch(err){
+        console.error(err);
+    }
+}
+
+// Poll every 1 second
+setInterval(fetchLogs, 1000);
+</script>
+
+
+
+     </div>
+
+
+
+</div>
+
+<form method="post" class="row g-3 mb-4">
+    <div class="col-auto">
+        <label for="run_time" class="form-label">🕰 Set Daily Time:</label>
+        <input type="time" name="run_time" id="run_time" class="form-control" value="{{ scraper_time if scraper_time != 'Not scheduled' else '' }}" required>
+    </div>
+    <div class="col-auto align-self-end">
+        <button type="submit" name="set_time" class="btn btn-primary">Update Time</button>
+    </div>
+</form>
+
+<div class="mb-3">
+    <form method="post" class="d-inline">
+        <button type="submit" name="toggle_scraper" class="btn btn-warning">
+            {{ 'Disable Scheduler' if enabled else 'Enable Scheduler' }}
+        </button>
+    </form>
+
+    <form method="get" action="{{ url_for('inbox_run_now') }}" class="d-inline">
+        <button type="submit" class="btn btn-success">▶ Run Now</button>
+    </form>
+
+    <form method="post" class="d-inline">
+        <button type="submit" name="kill_scraper" class="btn btn-danger">⛔ Kill Scraper</button>
+    </form>
+</div>
+
+{% if current_user.is_admin %}
+    <a href="{{ url_for('users') }}" class="btn btn-secondary">👥 Manage Users</a>
+{% endif %}
+{% endblock %}

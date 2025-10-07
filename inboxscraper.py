@@ -20,6 +20,11 @@ def run(stop_event=None):
     save_folder = "attachments"
     os.makedirs(save_folder, exist_ok=True)
     for num in data[0].split():
+        if stop_event and stop_event.is_set():
+            print("Scraper killed by user")
+            return  # Exit safely
+
+
         typ, msg_data = M.fetch(num, '(RFC822)')
         raw_email = msg_data[0][1]
 
@@ -31,6 +36,10 @@ def run(stop_event=None):
         # Loop through email parts
         for part in msg.iter_attachments():
             filename = part.get_filename()
+            if stop_event and stop_event.is_set():
+                print("Scraper killed by user")
+                return  # Exit safely
+
             if filename:
                 # Only save CSV or XLSX
                 if filename.endswith(('.csv', '.xlsx')):
